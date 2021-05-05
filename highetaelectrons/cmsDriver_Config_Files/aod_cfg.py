@@ -84,10 +84,6 @@ process.AODSIMoutput = cms.OutputModule("PoolOutputModule",
 
 # Additional output definition
 
-################Tune parameters here to improve the high eta electrons                                                                                                                                    ###try to decrease the numberMeasurementsForFit                                                                                                                                                         #process.CkfElectronCandidates.TransientInitialStateEstimatorParameters.numberMeasurementsForFit = cms.int32(2)  ###doesnt change anythng                                                                 
-#process.electronCkfTrackCandidates.TransientInitialStateEstimatorParameters.numberMeasurementsForFit = cms.int32(2)
-#process.TrajectoryFilterForElectrons.minimumNumberOfHits = cms.int32(2)
-
 
 # Other statements
 from Configuration.AlCa.GlobalTag import GlobalTag
