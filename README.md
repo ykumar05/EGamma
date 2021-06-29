@@ -19,6 +19,7 @@ Ntuples are already made. Can be found here: /eos/cms/store/group/phys_egamma/sh
 5.1: /SingleEle_V0_GENSIMRAW/shilpi-SingleEle_V2_miniAOD_modified_Kensaddition-28ea11753f803e89e7fd3e375196acc9/USER 
 
 Parameters Modified:
+
 process.TrajectoryFilterForElectrons.minimumNumberOfHits = cms.int32(2) ### 5(Original Value)                                                     
 process.GsfElectronFittingSmoother.MinNumberOfHits = cms.int32(2) #### 5(Original Value)
 
