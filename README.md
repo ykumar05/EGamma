@@ -31,14 +31,16 @@ process.TrajectoryFilterForElectrons.minimumNumberOfHits = cms.int32(2) ### 5(Or
 process.GsfElectronFittingSmoother.MinNumberOfHits = cms.int32(2) #### 5(Original)                                                         
 process.trackerDrivenElectronSeeds.MaxEta = cms.double(3) ### 2.4(Original)
 
-6.Once the above aod config is finalised, generate the aod samples.
+6.Once the above aod config is finalised, generate the aod samples using AOD maker(CMSDriver Command: config file present in highetaelectrons/cmsDriver_ConfigFiles_Yash)
 
-To run over a large sample, submit CRAB Jobs. The configuration files used to submit CRAB Jobs are present in Configuration_CRAB_Files.
+To run over a large sample, submit CRAB Jobs. The configuration files used to submit CRAB Jobs are present in highetaelectrons/crab_ConfigFiles_Yash.
 
-7.Generate the miniAOD using the above aod samples
+7.Generate the miniAOD using the above aod samples using the miniAOD Maker.(config file present in highetaelectrons/cmsDriver_configFiles_Yash)
 
-8.Then run the ggNtuplizer.
+To run over a large sample, submit CRAB Jobs. The configuration files used to submit CRAB Jobs are present in highetaelectrons/crab_ConfigFiles_Yash.
+
+8.Then run the ggNtuplizer to produce flat trees.
 
 9.Once the modified config ntuples are there, go to analysis directory, update files.list and do:
 
-root -l -b -q runAll.C+
+  root -l -b -q runAll.C+
